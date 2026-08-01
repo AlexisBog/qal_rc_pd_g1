@@ -23,8 +23,8 @@ python-course/
 │   ├── slides_exceptions_logging.md
 │   └── slides_modules_packages.md
 │
-├── practice/                  ← практичні завдання та проєкти
-│   └── todo_project/          ← наскрізний навчальний проєкт
+├── practical/                  ← практичні завдання та проєкти
+│   └── project_xx/             ← наскрізний навчальний проєкт
 │
 └── tests/                     ← тести до проєктів
 ```
@@ -46,12 +46,17 @@ python-course/
 
 ### 2. Клонування репозиторію
 
-```bash
-# Клонувати репозиторій
-git clone https://github.com/<username>/dev_python_red_cross.git
+Ці дії виконуються лише один раз на початку роботи!
 
-# Перейти в директорію проєкту
-cd dev_python_red_cross
+1. Зробіть форк репозиторіб натиснувши на кнопку "Fork" (Вилка)
+
+```bash
+# 2. Клонувати репозиторій
+# 2.1 Відкрийте термінал у зручній для роботи папці, в терміналі виконайте команду
+git clone https://github.com/<username>/qal_rc_pd_g1.git
+
+# 3. Перейти в директорію проєкту
+cd qal_rc_pd_g1
 ```
 
 > Робота з Git та GitHub детально розглядається на **Занятті 2**.
@@ -82,17 +87,14 @@ uv pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-### 5. Запуск навчального проєкту To-Do
+### 5. Обрати навчальний проект
 
 ```bash
 # Перейти в директорію проєкту
-cd practice/todo_project
-
-# Запустити точку входу
-python src/todo/main.py
+cd practical
 ```
 
-> Структура пакетів і точка входу `main()` розглядаються на **Занятті 15**.
+> Прочитайте та оберіть один з навчальних проектів
 
 ### 6. Запуск тестів
 
