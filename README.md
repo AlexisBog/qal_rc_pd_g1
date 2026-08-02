@@ -208,4 +208,4 @@ deactivate
 - [Документація Python](https://docs.python.org/3/)
 - [PEP 8 — стандарт оформлення коду](https://pep8.org/)
 - [Real Python — туторіали](https://realpython.com/)
-- [Начальна система QALight](https://study.qacloud.cc/)
+- [Начальна система QALight](https://restart.qalight.ua/login/index.php)
