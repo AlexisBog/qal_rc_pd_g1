@@ -2,20 +2,21 @@
 print("Hello", end = " ")
 print("world!")
 
+
 # task 02  == Виправте назви змінних, щоб текст виводався
-hello = ("Hello")
-world = ("world")
-print(hello, world + "!")
+hello = "Hello"
+world = "world"
+print(f"{hello} {world}!")
 
 # task 03 == Зробіть так, щоб кількість бананів була
 # завжди на чотири штуки більша, ніж яблук
-
 apples = 2
 banana = apples + 4
 print("Кількість бананів:", banana,)
 
 
 # task 04 == виправте назви змінних
+
 storona_1 = 1
 storona_2 = 2
 storona_3 = 3
@@ -23,22 +24,13 @@ storona_4 = 4
 
 # task 05 == Порахуйте периметр фігури з task 04
 # та виведіть його для користувача
+
+print()
 perimetery = storona_1 + storona_2 + storona_3 + storona_4
 print(f"Периметр фігури: {perimetery}")
 
 
 """
-    # Задачі 06 -10:
-    # Переведіть задачі з книги "Математика, 2 клас"
-    # на мову пітон і виведіть відповідь, так, щоб було
-    # зрозуміло дитині, що навчається в другому класі
-"""
-
-# task 06
-"""
-У Оксани було 20 марок із серії «Мистецтво» 
-і 7 марок із серії «Звірі».
-5 марок із серії «Мистецтво» та
 1 марку із серії «Звірі» вона подарувала подружці. 
 Скільки марок лишилось у Оксани?
 """
@@ -46,7 +38,10 @@ art = 20
 animals = 7
 art_gift = 5
 animals_gift = 1
-print(f"У Оксани залишилось {art - art_gift} марок із серії «Мистецтво» та {animals - animals_gift} марок із серії «Звірі».")
+total_art = art - art_gift
+total_animals = animals - animals_gift
+total_left = total_animals + total_art
+print(f"У Оксани залишилось {total_left} марок, з яких {total_art} марок із серії «Мистецтво» та {total_animals} марок із серії «Звірі».")
 
 # task 07
 """
@@ -55,9 +50,10 @@ print(f"У Оксани залишилось {art - art_gift} марок із с
 """
 apples = 4
 pears = apples + 5
-plums = apples + 2
+plums = apples - 2
 total_trees = apples + pears + plums
 print(f"Всього дерев посадили в саду: {total_trees}")
+
 
 # task 08
 """
@@ -90,6 +86,7 @@ print(f"Сьгодні прийшло {total_children} дітей у театр�
 а третя - як половина вартості першої та другої разом.
 Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 """
+
 book_1 = 8
 book_2 = book_1 + 2
 book_3 = ((book_1 + book_2) // 2)
