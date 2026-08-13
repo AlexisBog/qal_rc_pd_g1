@@ -10,7 +10,7 @@ num2 = float(input("Введіть друге число: "))
 if operation == '+':
     print(num1 + num2)
 elif operation == '-':
-    2 print(num1 - num2)
+    print(num1 - num2)
 
 # Вправа 2: Перевірка паролю
 print("\n=== ВПРАВА 2: Перевірка паролю ===")
