@@ -57,6 +57,7 @@ cap_letters = (adwentures_of_tom_sawer.count("A") + adwentures_of_tom_sawer.coun
                 + adwentures_of_tom_sawer.count("Y") + adwentures_of_tom_sawer.count("Z"))
 print(cap_letters)
 
+'''Інший метод'''
 count = 0
 
 for word in adwentures_of_tom_sawer.split():
