@@ -57,6 +57,17 @@ cap_letters = (adwentures_of_tom_sawer.count("A") + adwentures_of_tom_sawer.coun
                 + adwentures_of_tom_sawer.count("Y") + adwentures_of_tom_sawer.count("Z"))
 print(cap_letters)
 
+count = 0
+
+for word in adwentures_of_tom_sawer.split():
+    for letter in word:
+        if letter.isalpha():
+            if letter.isupper():
+                count +=1
+            break
+
+print(count)
+
 # task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
 """
