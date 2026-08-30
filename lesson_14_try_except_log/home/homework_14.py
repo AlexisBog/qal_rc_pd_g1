@@ -15,15 +15,29 @@ sum_numbers_in_list("21")  # ValueError
 """
 
 
-def sum_numbers_in_list(string_list: list):
+def sum_numbers_in_list(string_list: list) ->list:
     """Повертає список сум чисел зі списку строк,
     які складаються з чисел, розділених комою."""
+    #Валідація списка: повинен буди список і не повинен бути порожнім
+    if not isinstance(string_list, list) or len(string_list) == 0:
+        raise ValueError("Вхідні дані повинні бути не порожнім списком!")
+    
     result = []
+    #Обробка кожного елемента
     for item in string_list:
         try:
-            pass
+            # Якщо item не рядок (наприклад, int чи dict), виклик .split() викине AttributeError
+            numbers = [int(num.strip()) for num in item.split(",")]
+            result.append(sum(numbers))
+
+        except AttributeError as e:
+            #Виникає якщо не має методу .split
+            result.append("Не можу це зробити! AttributeError")
+
         except ValueError as e:
+            #Виникає якща не вдається перетворити на int
             result.append("Не можу це зробити!")
+        
     
     return result
 
