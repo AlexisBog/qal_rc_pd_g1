@@ -70,6 +70,7 @@ def analyze_heartbeats(file_path):
     print(f"Опрацьовано сигналів (Timestamp): {processed_lines}")
     print(f"Знайдено WARNING (31-33с): {warnings_count}")
     print(f"Знайдено ERROR (>33с): {errors_count}")
+    
 
 if __name__ == "__main__":
     base_dir = Path(__file__).parent
