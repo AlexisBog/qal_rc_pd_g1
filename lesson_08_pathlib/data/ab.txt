@@ -1,0 +1,2 @@
+Hello, Python! It`s me!
+I`m Happy!
